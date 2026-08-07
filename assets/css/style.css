@@ -4,9 +4,9 @@
     --text-color: #3f2d4d;
     --accent: #a66bc2;
     --accent-dark: #5a2d6b;
-    --surface: rgba(229, 230, 217, 0.85);
+    --surface: rgba(249, 246, 250, 0.85);
     --nav-bg: #b977d8;
-    --nav-text: #d9e0be;
+    --nav-text: #fcfcfc;
 }
 
 * {
@@ -60,7 +60,7 @@ nav {
     width: fit-content;
     background-color: var(--nav-bg);
     padding: 12px 18px;
-    border-radius: 8px;
+    border-radius: 12px;
 }
 
 .site-menu {
@@ -68,9 +68,11 @@ nav {
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 20px;
+    flex-direction: row;
     flex-wrap: wrap;
+    gap: 16px;
     justify-content: center;
+    align-items: center;
 }
 
 .site-menu li {
@@ -78,9 +80,16 @@ nav {
 }
 
 nav a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 18px;
     color: var(--nav-text);
     text-decoration: none;
     font-weight: 700;
+    background: var(--accent);
+    border-radius: 999px;
+    transition: transform 120ms ease, background 120ms ease;
 }
 
 nav a:hover,
