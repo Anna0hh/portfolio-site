@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Anna Oliver</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="page-intro">
+      <h1 id="main-title">Contact Me</h1>
+      <p class="highlight">Have a question? Send a message below.</p>
+    </div>
+
+    <nav aria-label="Primary navigation">
+      <ul class="site-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About / Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact">
+      <h2>Send a Message</h2>
+      <div class="contact-form">
+        <form action="mailto:aparker2@my.campus.edu" method="post" enctype="text/plain">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+
+          <button class="page-button" type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <div class="page-button-wrapper">
+      <a class="page-button" href="index.html">Back to Home</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Anna Oliver</p>
+  </footer>
+</body>
+</html>
