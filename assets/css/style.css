@@ -145,6 +145,10 @@ article h3 {
     color: var(--accent-dark);
 }
 
+.error {
+    color: red;
+}
+
 .contact-form input,
 .contact-form textarea {
     width: 100%;
