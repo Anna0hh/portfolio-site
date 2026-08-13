@@ -1,3 +1,1 @@
-I put the Nav buttons in a box and close together for Proximity.
-High contrast background, shadows, and text for readability.
-I'm very proud of the form page. please be nice i put my heart and soul into it.
+The first change I made was adding buttons to the navigation with high contrasting shades to make it easier for visually impaired users and to comply with the wave. I then changed my contact card to show my LinkedIn and GitHub rather than my E-mail. I also added a high contrast button at the bottom to take the user to the contact me page, separate from the rest of the website.
