@@ -145,8 +145,15 @@ article h3 {
     color: var(--accent-dark);
 }
 
-.error {
-    color: red;
+#error-message {
+    display: none;
+    color: #b00020;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+#error-message:not(:empty) {
+    display: block;
 }
 
 .contact-form input,

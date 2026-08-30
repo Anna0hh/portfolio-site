@@ -1,0 +1,56 @@
+document.body.style.background = 'purple';
+
+const colorMap = {
+  Green: 'green',
+  Blue: 'blue',
+  Red: 'red',
+  Purple: 'purple'
+};
+
+document.querySelectorAll('#Green, #Blue, #Red, #Purple').forEach((button) => {
+  button.addEventListener('click', () => {
+    document.body.style.background = colorMap[button.id];
+  });
+});
+
+const form = document.querySelector('form');
+const nameInput = document.getElementById('name');
+const emailInput = document.getElementById('email');
+const subjectInput = document.getElementById('subject');
+const messageInput = document.getElementById('message');
+const errorMessage = document.getElementById('error-message');
+
+if (errorMessage) {
+  errorMessage.style.display = 'none';
+}
+
+if (form) {
+  form.setAttribute('novalidate', 'novalidate');
+
+  form.addEventListener('submit', (event) => {
+    const messages = [];
+
+    if (nameInput.value.trim() === '') {
+      messages.push('Name is required');
+    }
+    if (emailInput.value.trim() === '') {
+      messages.push('Email is required');
+    }
+    if (subjectInput.value.trim() === '') {
+      messages.push('Subject is required');
+    }
+    if (messageInput.value.trim() === '') {
+      messages.push('Message is required');
+    }
+
+    if (messages.length > 0) {
+      errorMessage.textContent = messages.join(', ');
+      errorMessage.style.display = 'block';
+      event.preventDefault();
+      return;
+    }
+
+    errorMessage.textContent = '';
+    errorMessage.style.display = 'none';
+  });
+}
