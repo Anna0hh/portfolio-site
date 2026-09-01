@@ -7,12 +7,30 @@ const colorMap = {
   Purple: 'purple'
 };
 
+// Function to apply color
+function applyColor(color) {
+  document.body.style.background = color;
+  localStorage.setItem('selectedColor', color);
+}
+
+// Load saved color on page load
+function loadSavedColor() {
+  const savedColor = localStorage.getItem('selectedColor');
+  if (savedColor) {
+    applyColor(savedColor);
+  }
+}
+
+// Apply saved color when page loads
+document.addEventListener('DOMContentLoaded', loadSavedColor);
+
+// Add click listeners to color buttons
 document.querySelectorAll('#Green, #Blue, #Red, #Purple').forEach((button) => {
   button.addEventListener('click', () => {
-    document.body.style.background = colorMap[button.id];
+    const color = colorMap[button.id];
+    applyColor(color);
   });
 });
-
 
 //to-do list
 document.addEventListener('DOMContentLoaded', () => {
