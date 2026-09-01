@@ -13,7 +13,7 @@
 <body>
   <header>
     <div class="page-intro">
-      <h1 id="main-title">Projects</h1>
+      <h1 id="main-title">Assets Gallery</h1>
     </div>
 
     <nav aria-label="Primary navigation">
@@ -27,7 +27,8 @@
 
   <main>
     <section class="projects-list">
-      <h2>Project Gallery</h2>
+      <h2>Assets Gallery</h2>
+      <p>Welcome to my assets gallery! Here you'll find various design elements and resources.</p>
 
       <article>
         <h3>Don't like Purple? Try This!</h3>
@@ -38,8 +39,19 @@
       </article>
 
       <article>
-        <h3>SQL Query Project</h3>
-        <p>I'm serious — I need practice.</p>
+        <form class="to-do-form">
+          <h3>To Do List</h3>
+          <p>Add tasks to your to-do list & remove them when completed! It even stays when you refresh!</p>
+          <input type="text" placeholder="Add a new task" />
+          <button type="submit">Add</button>
+          <ul class="to-do-list">
+            <li class="to-do-item">
+              <input type="checkbox" id="todo1" class="todo-checkbox">
+              <label for="todo1">Sample task</label>
+              <button class="delete-btn" aria-label="Delete task">×</button>
+            </li>
+          </ul>
+        </form>
       </article>
 
       <article>
